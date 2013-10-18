@@ -105,3 +105,6 @@ class Fraccion
 	end		
 
 end
+p1 = Fraccion.new(4, 3)
+p2 = Fraccion.new(5, 2)
+puts p1 + p2
