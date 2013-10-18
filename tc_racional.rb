@@ -10,6 +10,9 @@ class Test_Fraccion < Test::Unit::TestCase
 
 		assert_equal("8/5", Fraccion.new(8, 5).to_s)
 		assert_not_equal("3/4", (Fraccion.new(1, 2) + Fraccion.new(28, 7)).to_s)
+		assert_equal("5/3", (Fraccion.new(8, 2) - Fraccion.new(7, 3)).to_s)
+		assert_not_equal("5/4", (Fraccion.new(4, 7) * Fraccion.new(5, 2)).to_s)
+		assert_equal("4/1", (Fraccion.new(6, 2) / Fraccion.new(3, 4)).to_s)
 
 	end
 
